@@ -1,0 +1,32 @@
+table.transcript th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+table.transcript td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+table.transcript col.col-time-speaker {
+    width: 120px;
+    background: #f0f0f0;
+    /* Optional: light background for the first column */
+}
+
+table.transcript col.col-text {
+    width: 100%;
+    background: #ffffff;
+    /* Optional: white background for the second column */
+}
+
+.fixed-video-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 320px;
+    height: 180px;
+    z-index: 1000;
+}
