@@ -25,26 +25,46 @@
     </header>
     <main>
         <div>
-            
-            
+
+
 <div>
   <article>
     <header>
-      <h1>Cities</h1>
-      <p>Municipal meeting transcripts and summaries for the following cities:</p>
+      <h1>This Site Has Moved</h1>
     </header>
 
-    <ul>
-      
-      <li>
-        <a href="cambridge-ma/index.html">Cambridge, MA</a>
-      </li>
-      
-      <li>
-        <a href="somerville-ma/index.html">Somerville, MA</a>
-      </li>
-      
-    </ul>
+    <p style="font-size: 1.2em; margin: 2em 0;">
+      CivicPulse has moved to a new home! Please visit us at:
+    </p>
+
+    <p style="font-size: 1.5em; text-align: center; margin: 2em 0;">
+      <a href="https://www.opentowns.org" style="font-weight: bold;">www.opentowns.org</a>
+    </p>
+
+    <p>
+      All municipal meeting transcripts and summaries are now available at our new site.
+      Please update your bookmarks.
+    </p>
+
+    <p style="margin-top: 2em;">
+      You will be automatically redirected in <span id="countdown">5</span> seconds...
+    </p>
+
+    <script>
+      let seconds = 5;
+      const countdownElement = document.getElementById('countdown');
+
+      const interval = setInterval(() => {
+        seconds--;
+        if (countdownElement) {
+          countdownElement.textContent = seconds;
+        }
+        if (seconds <= 0) {
+          clearInterval(interval);
+          window.location.href = 'https://www.opentowns.org';
+        }
+      }, 1000);
+    </script>
   </article>
 </div>
 
